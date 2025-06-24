@@ -16,7 +16,7 @@ services:
       - loki
 
   promtail:
-    image: grafana/promtail:make-images-static-26a87c9
+    image: grafana/promtail
     volumes:
       - $PWD:/etc/promtail
       - /var/log:/var/log
