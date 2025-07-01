@@ -17,6 +17,8 @@ type Config struct {
 			Username string `yaml:"username"`
 			Password string `yaml:"password"`
 		} `yaml:"basicAuth"`
+
+		OrgID string `yaml:orgID` // add org id
 	} `yaml:"loki"`
 
 	Metrics struct {

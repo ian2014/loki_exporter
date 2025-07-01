@@ -8,7 +8,7 @@ BRANCH    ?= $(shell git rev-parse --abbrev-ref HEAD)
 BUILDUSER ?= $(shell id -un)
 BUILDTIME ?= $(shell date '+%Y%m%d-%H:%M:%S')
 
-DOCKER_REPO       ?= ricoberger
+DOCKER_REPO       ?= ian2014
 DOCKER_IMAGE_NAME ?= loki_exporter
 DOCKER_IMAGE_TAG  ?= $(shell git describe --tags)
 

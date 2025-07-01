@@ -15,6 +15,7 @@ loki:
     enabled: <boolean>
     username: <string>
     password: <string>
+  orgID: "1" # multi tenant
 #
 # ---------------------------------- Metrics -----------------------------------
 #

@@ -27,6 +27,7 @@ type Exporter struct {
 func NewExporter(lokiMetrics map[string]*prometheus.GaugeVec) (*Exporter, error) {
 	client := &client.Client{
 		Address: exporterConfig.Loki.ListenAddress,
+		OrgID:   exporterConfig.Loki.OrgID,  // add org id
 	}
 	if exporterConfig.Loki.BasicAuth.Enabled {
 		client.Username = exporterConfig.Loki.BasicAuth.Username

@@ -1,7 +1,7 @@
 module github.com/ricoberger/loki_exporter
 
 require (
-	github.com/grafana/loki v1.3.0
+	github.com/grafana/loki v1.5.0
 	github.com/prometheus/client_golang v1.1.0
 	github.com/prometheus/common v0.7.0
 	gopkg.in/yaml.v2 v2.2.2
